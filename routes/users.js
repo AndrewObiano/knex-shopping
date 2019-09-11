@@ -61,7 +61,7 @@ router.post("/register", (req, res) => {
   });
 });
 
-router.post("/:id/forgot-password", (req, res) => {
+router.put("/:id/forgot-password", (req, res) => {
   const id = req.params.id;
   const password = req.body.password;
 
