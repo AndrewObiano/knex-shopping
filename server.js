@@ -19,19 +19,6 @@ app.get("/", (req, res) => {
   res.send("smoke test");
 });
 
-// app.post("/users", (req, res) => {
-//   const body = req.body;
-//   const username = body.username;
-
-//   db.raw("INSERT INTO users (username) VALUES(?) RETURNING *", [username])
-//     .then(results => {
-//       res.status(200).json({ user: results.rows });
-//     })
-//     .catch(err => {
-//       res.status(500).json({ message: err.message });
-//     });
-// });
-
 app.listen(PORT, () => {
   console.log(`Server started on PORT: ${PORT}`);
 });
